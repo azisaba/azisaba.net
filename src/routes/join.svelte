@@ -33,13 +33,13 @@
             name: "中継鯖2",
             ip: "mc02.azisaba.net",
             uptimeRobotApiKey: "m787604874-5e496917eec7b5b6d8225a3b",
-            provider: proxyProvider.aws,
+            provider: proxyProvider.vultr,
         },
         {
             name: "中継鯖3",
             ip: "mc03.azisaba.net",
             uptimeRobotApiKey: "m787604881-ecc95b96bfb7ade68531295b",
-            provider: proxyProvider.aws,
+            provider: proxyProvider.vultr,
         },
         {
             name: "中継鯖4 (DDPS1)",
