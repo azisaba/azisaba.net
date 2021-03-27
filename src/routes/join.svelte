@@ -24,40 +24,40 @@
 
     const proxyServers = [
         {
-            name: "DDPS1",
+            name: "中継鯖1",
+            ip: "mc01.azisaba.net",
+            uptimeRobotApiKey: "m787575975-3b2c274709728ebdc4665af3",
+            provider: proxyProvider.vultr,
+        },
+        {
+            name: "中継鯖2",
+            ip: "mc02.azisaba.net",
+            uptimeRobotApiKey: "m787604874-5e496917eec7b5b6d8225a3b",
+            provider: proxyProvider.aws,
+        },
+        {
+            name: "中継鯖3",
+            ip: "mc03.azisaba.net",
+            uptimeRobotApiKey: "m787604881-ecc95b96bfb7ade68531295b",
+            provider: proxyProvider.aws,
+        },
+        {
+            name: "中継鯖4 (DDPS1)",
             ip: "54.250.163.61:35575",
             uptimeRobotApiKey: "m784491883-ee0edb2f453aee35dc6c2d3b",
             provider: proxyProvider.aws,
         },
         {
-            name: "DDPS2",
+            name: "中継鯖5 (DDPS2)",
             ip: "13.231.99.109:35575",
             uptimeRobotApiKey: "m784491888-d82caba675aa6d3b96f2293b",
             provider: proxyProvider.aws,
         },
         {
-            name: "DDPS3",
+            name: "中継鯖6 (DDPS3)",
             ip: "54.199.141.66:35575",
             uptimeRobotApiKey: "m784491889-3aa7bf6dca41a5f40153feed",
             provider: proxyProvider.aws,
-        },
-        {
-            name: "DDPS4",
-            ip: "167.179.81.253:35575",
-            uptimeRobotApiKey: "m784946618-df83183700506722cd43b630",
-            provider: proxyProvider.vultr,
-        },
-        {
-            name: "DDPS5",
-            ip: "202.182.123.235:35575",
-            uptimeRobotApiKey: "m784946613-b1de29e51d6d00fdba2a116d",
-            provider: proxyProvider.vultr,
-        },
-        {
-            name: "DDPS6",
-            ip: "45.77.10.15:35575",
-            uptimeRobotApiKey: "m784946609-8f545489caf7fcdf66ce38b0",
-            provider: proxyProvider.vultr,
         },
     ];
 </script>
