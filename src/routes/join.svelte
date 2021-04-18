@@ -42,6 +42,12 @@
             provider: proxyProvider.vultr,
         },
         {
+            name: "中継鯖4",
+            ip: "mc04.azisaba.net",
+            uptimeRobotApiKey: "m787890362-0c751feff2ed5e258f86c550",
+            provider: proxyProvider.vultr,
+        },
+        {
             name: "中継鯖4 (DDPS1)",
             ip: "54.250.163.61:35575",
             uptimeRobotApiKey: "m784491883-ee0edb2f453aee35dc6c2d3b",
