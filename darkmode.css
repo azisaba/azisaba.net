@@ -1,0 +1,65 @@
+.dark-mode .bx--side-nav {
+    background-color: #22282a;
+}
+
+.dark-mode a.bx--side-nav__link > .bx--side-nav__link-text,
+.dark-mode .bx--side-nav__submenu {
+    color: #cacaca;
+}
+
+/* applies to body */
+.dark-mode, .dark-mode .bx--content {
+    background-color: #171a1c;
+    color: #ffffff;
+}
+
+.dark-mode .bx--snippet--single {
+    background-color: #272c2f;
+}
+
+.dark-mode .bx--accordion__heading {
+    color: #ffffff;
+}
+
+.dark-mode .bx--side-nav__icon > svg {
+    fill: #efefef;
+}
+
+.dark-mode .bx--side-nav__menu a.bx--side-nav__link--current,
+.dark-mode .bx--side-nav__menu a.bx--side-nav__link[aria-current='page'],
+.dark-mode a.bx--side-nav__link--current,
+.dark-mode a.bx--side-nav__link[aria-current='page'],
+.dark-mode a.bx--side-nav__link--current {
+    background-color: #6f6f6f;
+}
+
+.dark-mode .bx--side-nav__item:not(.bx--side-nav__item--active):hover .bx--side-nav__item:not(.bx--side-nav__item--active) > .bx--side-nav__submenu:hover,
+.dark-mode .bx--side-nav__item:not(.bx--side-nav__item--active) > .bx--side-nav__link:hover,
+.dark-mode .bx--side-nav__menu a.bx--side-nav__link:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
+.dark-mode .bx--side-nav a.bx--header__menu-item:hover, .bx--side-nav .bx--header__menu-title[aria-expanded='true']:hover,
+.dark-mode .bx--side-nav__submenu:hover,
+.dark-mode .bx--accordion__heading:hover::before {
+    background-color: #727272;
+}
+
+.dark-mode .bx--tooltip__label {
+    color: #dedede;
+}
+
+.dark-mode .bx--tooltip__trigger svg {
+    fill: #dedede;
+}
+
+.dark-mode .bx--list__item {
+    color: #efefef;
+}
+
+/* links are basically #ff66fa */
+.dark-mode a, .dark-mode .bx--link {
+    color: #ff66fa;
+}
+
+/* but feels weird on header so we use the default color */
+a.bx--header__name, a.bx--header__name:hover {
+    color: #f4f4f4;
+}
