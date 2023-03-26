@@ -69,10 +69,10 @@
 </script>
 
 <svelte:head>
-    <title>今すぐ参加</title>
+    <title>アジ鯖公式サイト｜アジ鯖に参加する</title>
 </svelte:head>
 
-<h1>今すぐ参加</h1>
+<h1>アジ鯖に参加する</h1>
 
 <p>
     アジ鯖はバニラまたは<Link href="https://optifine.net/home" target="_blank"
@@ -89,43 +89,13 @@
     </p>
 </Tooltip>
 
-<h4>公開IPアドレス</h4>
-
-<CodeSnippet on:click={() => copy("azisaba.net")}>azisaba.net</CodeSnippet>
-
-<h4>または {proxyServers.length} 台のプロキシサーバーのいずれかに接続</h4>
-
-<Accordion align="start">
-    {#each proxyServers as server}
-        <AccordionItem>
-            <div
-                slot="title"
-                style="display: flex; justify-content: space-between;"
-            >
-                {server.name}
-                <img
-                    alt={server.name}
-                    src="https://badgen.net/uptime-robot/status/{server.uptimeRobotApiKey}"
-                    style="margin-right: var(--cds-layout-01);"
-                />
-            </div>
-
-            <p>IPアドレス</p>
-            <CodeSnippet on:click={() => copy(server.ip)}
-                >{server.ip}</CodeSnippet
-            >
-
-            <p>提供者</p>
-            <img
-                alt={server.provider.name}
-                src="https://www.google.com/s2/favicons?domain={server.provider
-                    .domain}"
-            />
-            {server.provider.name}
-        </AccordionItem>
-    {/each}
-</Accordion>
-
-<h4>オリジンサーバー (アジ鯖本体)</h4>
-
-<p>IPアドレスは非公開です。</p>
+<p>1.
+    <Link
+        href="/connect"
+        target="_blank">接続する</Link
+>から、アドレスをコピーする
+</p>
+<p>2. Minecraftを起動し、マルチプレイを選択する</p>
+<p>3. サーバーを追加をクリックし、コピーしたアドレスをサーバーアドレス欄に貼り付け、完了ボタンを押す</p>
+<p>4. サーバー一覧から、アジ鯖を選択し、「サーバーに接続」ボタンを押す</p>
+<p>5. 接続完了！</p>
