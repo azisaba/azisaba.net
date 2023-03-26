@@ -14,6 +14,7 @@
         SkipToContent,
     } from "carbon-components-svelte";
 
+    import LightFilled24 from "carbon-icons-svelte/lib/LightFilled24";
     import ChatBot24 from "carbon-icons-svelte/lib/ChatBot24";
     import LogoYoutube24 from "carbon-icons-svelte/lib/LogoYoutube24";
     import LogoTwitter24 from "carbon-icons-svelte/lib/LogoTwitter24";
@@ -115,6 +116,11 @@
 
     <HeaderUtilities>
         {#if !isMobile}
+            <HeaderActionLink
+                    title="ダークテーマとライトテーマを切り替え"
+                    icon={{ render: LightFilled24 }}
+                    onclick="toggleDarkMode()"
+            />
             {#each socials as social}
                 <HeaderActionLink
                     title={social.name}
