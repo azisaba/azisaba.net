@@ -30,13 +30,24 @@
     import PlayOutline32 from "carbon-icons-svelte/lib/PlayOutline32";
     import Locked32 from "carbon-icons-svelte/lib/Locked32";
 
+    import Gift32 from "carbon-icons-svelte/lib/Gift32";
+    import Link32 from "carbon-icons-svelte/lib/Link32";
+    import HelpDesk32 from "carbon-icons-svelte/lib/HelpDesk32";
+    import LogoDiscord24 from "carbon-icons-svelte/lib/LogoDiscord24";
+    import LogoDiscord32 from "carbon-icons-svelte/lib/LogoDiscord32";
+    import Connect32 from "carbon-icons-svelte/lib/Connect32";
+    import StarHalf32 from "carbon-icons-svelte/lib/StarHalf32";
+    import WatsonHealthStackedScrolling_1_32 from "carbon-icons-svelte/lib/WatsonHealthStackedScrolling_132";
+    import Chat32 from "carbon-icons-svelte/lib/Chat32";
+    import Checkbox32 from "carbon-icons-svelte/lib/Checkbox32";
+
     export let segment;
 
     const socials = [
         {
             name: "Discord",
-            iconMini: ChatBot24,
-            icon: ChatBot32,
+            iconMini: LogoDiscord24,
+            icon: LogoDiscord32,
             url: "https://discord.gg/azisaba",
         },
         {
@@ -55,7 +66,7 @@
             name: "GitHub",
             iconMini: LogoGithub24,
             icon: LogoGithub32,
-            url: "https://github.com/azisaba",
+            url: "https://github.com/AzisabaNetwork",
         },
     ];
 
@@ -63,7 +74,7 @@
         "Wiki",
         {
             name: "公式Wiki",
-            url: "https://azisabaofficial.playing.wiki",
+            url: "https://wiki.azisaba.net",
         },
         {
             name: "非公式Wiki",
@@ -146,45 +157,115 @@
                 isSelected={segment === "intro"}
             />
             <SideNavLink
-                icon={{ render: Book32 }}
-                text="ルール"
-                href="/terms"
-                isSelected={segment === "terms"}
+                    icon={{ render: PlayOutline32 }}
+                    text="参加する"
+                    href="/join"
+                    isSelected={segment === "join"}
             />
             <SideNavLink
-                icon={{ render: PlayOutline32 }}
-                text="今すぐ参加"
-                href="/join"
-                isSelected={segment === "join"}
-            />
-        </SideNavMenu>
-        <SideNavMenu text="もっと詳しく" expanded={true}>
-            <SideNavLink icon={{ render: Locked32 }} text="各サーバー紹介" />
-            <SideNavLink icon={{ render: Locked32 }} text="アルバム" />
-            <SideNavLink icon={{ render: Locked32 }} text="運営一覧" />
-            <SideNavLink icon={{ render: Locked32 }} text="スポンサー" />
-        </SideNavMenu>
-        <SideNavMenu text="その他">
-            <SideNavLink
-                text="接続チェック"
-                href="https://mcsrvstat.us/server/azisaba.net"
-                target="_blank"
+                icon={{ render: Connect32 }}
+                text="接続する"
+                href="/connect"
+                isSelected={segment === "connect"}
             />
             <SideNavLink
-                text="リソースパックのダウンロード"
-                href="https://packs.azisaba.net"
-                target="_blank"
+                    icon={{ render: StarHalf32 }}
+                    text="いつもとサイト違うね"
+                    href="/not-usual-site"
+                    isSelected={segment === "not-usual-site"}
             />
         </SideNavMenu>
-        <SideNavMenu text="共有する" expanded={true}>
-            {#each socials as social}
-                <SideNavLink
-                    icon={{ render: social.icon }}
-                    text={social.name}
-                    href={social.url}
+
+        <SideNavMenu text="サーバー一覧"  expanded={true}>
+            <SideNavLink
+                    icon={{ render: Book32 }}
+                    text="ばにらいふ！"
+                    href="/server-intro/vanilife"
+                    isSelected={segment === "vanilife"}
+            />
+            <SideNavLink
+                    icon={{ render: Book32 }}
+                    text="Life"
+                    href="/server-intro/life"
+                    isSelected={segment === "life"}
+            />
+            <SideNavLink
+                    icon={{ render: Book32 }}
+                    text="LeonGunWar"
+                    href="/server-intro/leon-gun-war"
+                    isSelected={segment === "leon-gun-war"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="Despawn(開発中)"
+                    href="/server-intro/despawn"
+                    isSelected={segment === "despawn"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="DiveRPG(開発中)"
+                    href="/server-intro/diverpg"
+                    isSelected={segment === "diverpg"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="Coretol (開発中)"
+                    href="/server-intro/coretol"
+                    isSelected={segment === "coretol"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="JunkGames(ベータ公開中)"
+                    href="/server-intro/junkgames"
+                    isSelected={segment === "junkgames"}
+            />
+        </SideNavMenu>
+        <SideNavMenu text="ルール">
+            <SideNavLink
+                    icon={{ render: Book32 }}
+                    text="利用規約"
+                    href="/terms"
+                    isSelected={segment === "terms"}
+            />
+            <SideNavLink
+                    icon={{ render: Checkbox32 }}
+                    text="全体サーバールール"
+                    href="/minecraft-all-srv-rule"
+                    isSelected={segment === "minecraft-all-srv-rule"}
+            />
+            <SideNavLink
+                    icon={{ render: WatsonHealthStackedScrolling_1_32 }}
+                    text="各サーバールール"
+                    href="/minecraft-srvs-rule"
+                    isSelected={segment === "minecraft-srvs-rule"}
+            />
+            <SideNavLink
+                    icon={{ render: Chat32 }}
+                    text="チャットガイドライン"
+                    href="/chat-guideline"
+                    isSelected={segment === "chat-guideline"}
+            />
+        </SideNavMenu>
+
+        <SideNavMenu text="その他" expanded={true}>
+            <SideNavLink
+                    icon={{ render: Gift32 }}
+                    text="寄付"
                     target="_blank"
-                />
-            {/each}
+                    href="https://azisaba.buycraft.net/"
+            />
+            <SideNavLink
+                    icon={{ render: Link32 }}
+                    text="リンク集"
+                    href="/links"
+                    isSelected={segment === "links"}
+            />
+            <SideNavLink
+                    icon={{ render: HelpDesk32 }}
+                    text="サポート"
+                    href="/support"
+                    isSelected={segment === "support"}
+            />
         </SideNavMenu>
     </SideNavItems>
 </SideNav>
