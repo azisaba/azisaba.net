@@ -1,0 +1,28 @@
+h1 {
+    margin-bottom: var(--cds-layout-03);
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: var(--cds-layout-02);
+    margin-bottom: var(--cds-layout-01);
+}
+
+p {
+    margin-top: var(--cds-layout-01);
+    margin-bottom: var(--cds-layout-01);
+}
+
+.bx--tooltip__label {
+    margin-top: var(--cds-spacing-03);
+    margin-bottom: var(--cds-spacing-03);
+}
+
+@media screen and (max-width: calc(1056px - 1px)) {
+    .bx--side-nav.bx--side-nav--expanded ~ .bx--content {
+        margin-left: 0;
+    }
+
+    .bx--side-nav ~ .bx--content {
+        margin-left: 0;
+    }
+}
