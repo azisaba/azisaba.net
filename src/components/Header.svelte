@@ -40,6 +40,7 @@
     import WatsonHealthStackedScrolling_1_32 from "carbon-icons-svelte/lib/WatsonHealthStackedScrolling_132";
     import Chat32 from "carbon-icons-svelte/lib/Chat32";
     import Checkbox32 from "carbon-icons-svelte/lib/Checkbox32";
+    import Application32 from "carbon-icons-svelte/lib/Application32";
 
     export let segment;
 
@@ -179,39 +180,33 @@
         <SideNavMenu text="サーバー一覧"  expanded={true}>
             <SideNavLink
                     icon={{ render: Book32 }}
-                    text="ばにらいふ！"
-                    href="/server-intro/vanilife"
-                    isSelected={segment === "vanilife"}
-            />
-            <SideNavLink
-                    icon={{ render: Book32 }}
                     text="Life"
                     href="/server-intro/life"
                     isSelected={segment === "life"}
             />
             <SideNavLink
                     icon={{ render: Book32 }}
-                    text="LeonGunWar"
-                    href="/server-intro/leon-gun-war"
-                    isSelected={segment === "leon-gun-war"}
-            />
-            <SideNavLink
-                    icon={{ render: PlayOutline32 }}
-                    text="Despawn(開発中)"
-                    href="/server-intro/despawn"
-                    isSelected={segment === "despawn"}
-            />
-            <SideNavLink
-                    icon={{ render: PlayOutline32 }}
-                    text="DiveRPG(開発中)"
-                    href="/server-intro/diverpg"
-                    isSelected={segment === "diverpg"}
+                    text="LeonGunWar2"
+                    href="/server-intro/leon-gun-war2"
+                    isSelected={segment === "leon-gun-war2"}
             />
             <SideNavLink
                     icon={{ render: PlayOutline32 }}
                     text="Coretol (開発中)"
                     href="/server-intro/coretol"
                     isSelected={segment === "coretol"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="ばにらいふ２ (開発中)"
+                    href="/server-intro/vanilife2"
+                    isSelected={segment === "vanilife2"}
+            />
+            <SideNavLink
+                    icon={{ render: PlayOutline32 }}
+                    text="Conflict (開発中)"
+                    href="/server-intro/conflict"
+                    isSelected={segment === "conflict"}
             />
             <SideNavLink
                     icon={{ render: PlayOutline32 }}
@@ -226,6 +221,12 @@
                     text="利用規約"
                     href="/terms"
                     isSelected={segment === "terms"}
+            />
+            <SideNavLink
+                    icon={{ render: Application32 }}
+                    text="Minecraftサーバ個別規定"
+                    href="/minecraft-server-policy"
+                    isSelected={segment === "minecraft-all-srv-rule"}
             />
             <SideNavLink
                     icon={{ render: Checkbox32 }}
@@ -253,6 +254,12 @@
                     text="寄付"
                     target="_blank"
                     href="https://azisaba.buycraft.net/"
+            />
+            <SideNavLink
+                    icon={{ render: Gift32 }}
+                    text="アマギフ受付"
+                    target="_blank"
+                    href="https://donate-link-discord.azisaba.net/"
             />
             <SideNavLink
                     icon={{ render: Link32 }}
